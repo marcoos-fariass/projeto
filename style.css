@@ -29,6 +29,7 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    height: 100%vh;
   }
   body * {
     font-family: "Inter", sans-serif;
@@ -161,4 +162,16 @@ border-radius: 9999px;
   footer {
     padding: 24px 0;
     text-align: center;
+  }
+
+  /* media queries */
+
+  @media (min-width:700px) {
+    :root {
+      --bg-url : url(./assets/bg-desktop.jpg);
+    }/
+    
+    .light {
+      --bg-url : url(./assets/bg-desktop-light.jpg);
+    }
   }
